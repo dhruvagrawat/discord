@@ -23,7 +23,7 @@ export default function RootLayout({
         <body className={cn (
           font.className, 
           "bg-white dark:bg-[#313338]"
-        )}></body>
+        )}>
         <ThemeProvider
         attribute="class"
         defaultTheme="dark"
@@ -32,6 +32,8 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+
+        </body>
       </html>
     </ClerkProvider>
   );
